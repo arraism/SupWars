@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="/img/tankm_red.png">
+		<script type="text/javascript" src="/js/jquery.js"></script>	
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script>
+			var socket = io.connect("http://{{ server.ip }}:{{ server.port }}")
+			var userInfo = {
+				id: {{ user.id }},
+				login: "{{ user.login }}",
+				img: "portrait1.png"
+			}
+		</script>
+	</head>
+	<body>
+
+		<header>
+			<h1>Supwars</h1>
+		</header>
+		
+		<canvas id="game-canvas"></canvas>
+
+		<footer>
+			<p>© Arraism</p>
+		</footer>
+
+		<script src="/js/socket.client.js"></script>
+		<script src="/js/app.js"></script>
+		<script src="/js/functions.js"></script>
+		<script src="/js/Classes/User.js"></script>
+		<script src="/js/Classes/Unit.js"></script>
+		<script src="/js/Classes/Building.js"></script>
+		<script src="/js/Classes/Tile.js"></script>
+		<script src="/js/Classes/Team.js"></script>
+		<script src="/js/Classes/Map.js"></script>
+		<script src="/js/Classes/HUD.js"></script>
+		<script src="/js/Classes/Game.js"></script>
+
+	</body>
+</html>
