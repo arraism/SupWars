@@ -2,9 +2,5 @@
   "name": "supwars",
   "description": "JS Application",
   "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-		"mysql" : "2.0.0-alpha7",
-		"swig":"1.0.0"
-		}
+  "private": true
 }
